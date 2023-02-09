@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    I am Partha and I want money only.
+    I will kill you.
     
 </body>
 </html>
