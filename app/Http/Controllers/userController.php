@@ -20,7 +20,13 @@ class userController extends Controller
         //User::where('id', 3) -> update(['name' => 'Sarker']);
 
         // find a single user
-         $user = User::where('name','Sarker')-> get();
+
+        // $data = ['name' => "Skr", 'email' => "Saaaaaa@gmail.com", 
+        //          'password' => "Sukarna"] ;
+        
+        // User::create($data);
+
+        $user = User::where('name','Skr')-> get();
   
         // find a single user only based on primary key
         //$user = User::find(1);
