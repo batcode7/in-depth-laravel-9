@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 use App\Http\Controllers;
 use App\Http\Controllers\userController;
 /*
@@ -15,7 +16,9 @@ use App\Http\Controllers\userController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // using alias to return view
+    return View::make('welcome');
+    // return view('welcome');
 });
 
 Route::get('/partha', function () {
@@ -25,3 +28,6 @@ Route::get('/partha', function () {
 
 Route::get('/bhoumik', [userController::class,'index']);  
 /* when hitting the /bhoumik endpoint go to userController class and execute the index function do not forget to put the location of the controller at the beginning */
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

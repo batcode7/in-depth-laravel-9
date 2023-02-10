@@ -26,7 +26,7 @@ class userController extends Controller
         
         // User::create($data);
 
-        $user = User::where('name','Skr')-> get();
+        // $user = User::where('name','Skr')-> get();
   
         // find a single user only based on primary key
         //$user = User::find(1);
@@ -42,7 +42,7 @@ class userController extends Controller
 
         // $user = DB::select('select * from users' );
       
-        return $user;
+        return "THIS IS BUSINESSS";
 
     }
 }
